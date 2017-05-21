@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserProfile extends Model
 {
+    protected $table = 'users_profiles';
     /**
      * The attributes that are mass assignable.
      *

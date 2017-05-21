@@ -27,7 +27,7 @@ class UsersQuery extends Query
         return [
             'id' => [
                 'name' => 'id',
-                'type' => Type::int()
+                'type' => Type::id()
             ],
             'email' => [
                 'name' => 'email',

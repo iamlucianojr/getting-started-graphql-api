@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b2732ad3e97f8052066b33d517c17cc5",
-    "content-hash": "73c815e331091199a03cd13a9404fbcb",
+    "hash": "8d2e9ba3709e355db8d582578bb71f70",
+    "content-hash": "3f21d7f24c39ce40ca60c655652ab7fd",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -731,6 +731,48 @@
                 "php"
             ],
             "time": "2017-03-05 18:23:57"
+        },
+        {
+            "name": "noh4ck/graphiql",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noh4ck/laravel-graphiql.git",
+                "reference": "00b31a1d7ec82da5b1ab1db3d10165d0401ddb34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noh4ck/laravel-graphiql/zipball/00b31a1d7ec82da5b1ab1db3d10165d0401ddb34",
+                "reference": "00b31a1d7ec82da5b1ab1db3d10165d0401ddb34",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.1.*|5.2.*|5.3.*|5.4.*",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphiql\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Rudlang",
+                    "email": "jonas.rudlang@gmail.com"
+                }
+            ],
+            "description": "Graphiql ui for laravel",
+            "keywords": [
+                "graphiql",
+                "graphql",
+                "laravel"
+            ],
+            "time": "2017-02-06 16:50:58"
         },
         {
             "name": "paragonie/random_compat",
@@ -3622,7 +3664,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "noh4ck/graphiql": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

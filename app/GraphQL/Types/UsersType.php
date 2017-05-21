@@ -20,7 +20,7 @@ class UsersType extends GraphQLType
     {
         return [
             'id' => [
-                'type' => Type::nonNull(Type::int()),
+                'type' => Type::nonNull(Type::id()),
                 'description' => 'The id of the user'
             ],
             'email' => [
@@ -32,7 +32,7 @@ class UsersType extends GraphQLType
                 'description' => 'The name of the user'
             ],
             // field relation to model user_profiles
-            'users_profiles' => [
+            'profile' => [
                 'type' => GraphQL::type('users_profiles'),
                 'description' => 'The profile of the user'
             ]

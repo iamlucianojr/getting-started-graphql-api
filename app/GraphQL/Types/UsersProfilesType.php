@@ -6,10 +6,10 @@ use App\UserProfile;
 use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Type as GraphQLType;
 
-class UserProfilesType extends GraphQLType
+class UsersProfilesType extends GraphQLType
 {
     protected $attributes = [
-        'name' => 'Profile',
+        'name' => 'UsersProfiles',
         'description' => 'A type',
         'model' => UserProfile::class
     ];
