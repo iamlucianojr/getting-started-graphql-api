@@ -6,10 +6,10 @@ use App\ProductImage;
 use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Type as GraphQLType;
 
-class ProductImagesType extends GraphQLType
+class ProductsImagesType extends GraphQLType
 {
     protected $attributes = [
-        'name' => 'ProductImages',
+        'name' => 'ProductsImages',
         'description' => 'A type product images',
         'model' => ProductImage::class
     ];

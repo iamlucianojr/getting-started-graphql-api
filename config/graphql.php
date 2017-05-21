@@ -2,14 +2,11 @@
 
 
 use App\GraphQL\Query\ProductsQuery;
-use App\GraphQL\Type\ProductImagesType;
-use App\GraphQL\Type\ProductType;
-use App\GraphQL\Type\UserProfilesType;
+use App\GraphQL\Query\UsersQuery;
+use App\GraphQL\Type\ProductsImagesType;
+use App\GraphQL\Type\ProductsType;
+use App\GraphQL\Type\UsersProfilesType;
 use App\GraphQL\Type\UsersType;
-use example\Mutation\ExampleMutation;
-use example\Query\ExampleQuery;
-use example\Type\ExampleRelationType;
-use example\Type\ExampleType;
 
 return [
 
@@ -88,7 +85,7 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                'users' => UserQuery::class,
+                'users' => UsersQuery::class,
                 'products' => ProductsQuery::class,
             ],
             'mutation' => [],
@@ -106,9 +103,9 @@ return [
     // ]
     //
     'types' => [
-        'product_images' => ProductImagesType::class,
-        'products'  => ProductType::class,
-        'user_profiles'  => UserProfilesType::class,
+        'products_images' => ProductsImagesType::class,
+        'products'  => ProductsType::class,
+        'users_profiles'  => UsersProfilesType::class,
         'users'  => UsersType::class,
     ],
     
