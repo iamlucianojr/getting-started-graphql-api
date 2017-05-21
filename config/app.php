@@ -177,7 +177,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        \Rebing\GraphQL\GraphQLServiceProvider::class,
+        Rebing\GraphQL\GraphQLServiceProvider::class,
 
     ],
 
